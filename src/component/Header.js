@@ -10,6 +10,7 @@ function Header() {
     <nav>
       <a href="/" className='link'>Home</a>
       <a href="/ProductDetails"  className='link'>Products</a>
+      <a href="/ProductList"  className='link'>ProductsList</a>
       <a href="/contact"  className='link'>Contacts</a>
       <a href="/Admin"  className='link'>Admin </a>
     </nav>

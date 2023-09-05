@@ -1,6 +1,11 @@
 import React from 'react'
+import {  useSearchParams } from 'react-router-dom'
 
 function ProductList() {
+  const [searchParams]=useSearchParams();
+  console.log(searchParams.get("q"));
+  console.log(searchParams.get("instock"))
+  console.log(searchParams.get("keywords"))
   return (
     <div>
   

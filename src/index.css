@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+header img{
+border-radius: 90px;
+height: 40px;
+width: 50px;
+
+}
+header{
+  display: flex;
+  flex-direction: row;
+}
+header a.logo span{
+justify-content: center;
+  align-self: center;
+  margin-left: 10px;
+}
+header a.logo{
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 15px;
+}
+header a.link{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 15px;
+  
+}
+header nav{
+  display: flex;
+justify-content: center;
+flex-direction: row-reverse;
+}
+header .link:hover{
+  background-color: rgb(223, 207, 207);
+  border: 1px solid rgb(236, 205, 205);
+  border-radius: 5px;
+}
+header{
+
+  display: flex;
+  background-color: rgb(233, 225, 225);
+  flex-direction: row;
+}
+
+.component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid rgb(130, 118, 118);
+  margin: 15px 5px 5px 5px;
+  border-radius: 10px;
+  box-shadow: 5px 0px 5px #888888;
+}
+button{
+  background-color: rgb(96, 124, 185);
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+}

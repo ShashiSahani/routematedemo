@@ -1,13 +1,14 @@
 import React from 'react'
-import Header from './Header'
+import { useParams } from 'react-router-dom'
 
 function ProductDetails() {
+  const param=useParams();
+  console.log(param.id)
   return (
     <div>
-    <Header/>
   
   <div className="component">
-  <h1>Product Details</h1>
+  <h1>{param.id}-Product Details</h1>
 
   </div>
  </div>

@@ -9,8 +9,9 @@ function Header() {
     </a>
     <nav>
       <a href="/" className='link'>Home</a>
-      <a href="/ProductList"  className='link'>Products</a>
+      <a href="/ProductDetails"  className='link'>Products</a>
       <a href="/contact"  className='link'>Contacts</a>
+      <a href="/Admin"  className='link'>Admin </a>
     </nav>
    </header>
   )

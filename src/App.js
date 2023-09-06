@@ -7,6 +7,9 @@ import Admin from "./component/Admin";
 import Footer from './component/Footer'
 import ErrorPage from "./component/ErrorPage";
 import ProductDetails from "./component/ProductDetails";
+import ContactEu from "./component/ContactEu";
+import ContactUs from "./component/ContactUs";
+import ContactIn from "./component/ContactIn";
 function App() {
   const user=false;
 
@@ -19,9 +22,15 @@ function App() {
     <Route path="/" element={<Home/>}>Home</Route>
     <Route path="ProductDetails/:id" element={<ProductDetails/>}>ProductDetails</Route>
     <Route path="ProductList" element={<ProductList/>}>ProductList</Route>
-    <Route path="Contact" element={<Contact/>}>Contact</Route>
+    <Route path="Contact" element={<Contact/>}>
+      <Route path="eu" element={<ContactEu/>}></Route>
+      <Route path="us" element={<ContactUs/>}></Route>
+      <Route path="in" element={<ContactIn/>}></Route>
+      <Route path="*" element={<ContactEu/>}></Route>
+     
+    </Route>
     <Route path="Admin" element={user?< Admin/> :<ErrorPage/>}>Admin</Route>
-    <Route path="*" element={<ErrorPage/>}>Error</Route>
+    <Route path="*" element={<ErrorPage title="404"/>}>Error</Route>
   </Routes>
   </main>
   <Footer/>

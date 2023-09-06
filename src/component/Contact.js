@@ -1,11 +1,11 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate ,Outlet} from 'react-router-dom'
 function Contact() {
   const navigate=useNavigate();
 
   const handleSubmit=()=>{
     console.log("---------")
-    navigate("/")
+    // navigate("/")
   }
   return (
     <div>
@@ -13,8 +13,8 @@ function Contact() {
      <div className="component">
      <h1>Contact</h1>
      </div>
-<button onClick={handleSubmit}>Back to Home</button>
-
+<button onClick={handleSubmit}>Submit</button>
+<Outlet/>
     </div>
   )
 }

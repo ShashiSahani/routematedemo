@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ErrorPage() {
+function ErrorPage({title}) {
   return (
     <div className='component'>
-      <h1>Page Not Found</h1>
+      <h1>{title}-Page Not Found</h1>
     </div>
   )
 }

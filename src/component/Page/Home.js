@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from './Header'
 
-function Home() {
+export default function Home() {
   return (
     <div>
      
@@ -13,4 +12,3 @@ function Home() {
   )
 }
 
-export default Home
